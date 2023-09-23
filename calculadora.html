@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Img/ojos.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable= no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./Css/calculadora.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+    <h1>Calculator</h1>
+    </div>
+    <div class="box">
+        <span class="borderLine"></span>
+        <form class="calc-buttons" name="calc">
+            <input class="screen" name="txt" readonly>
+            <div class="calc-buttons-row">
+                <span class="calc-button double" onclick="clearScreen()">C</span>
+                <span class="calc-button" onclick="removeLastCharacter()">&larr;</span>
+                <span class="calc-button" onclick="appendSymbol('/')">&div;</span>
+            </div>
+            <div class="calc-buttons-row">
+                <span class="calc-button" onclick="appendNumber('9')">9</span>
+                <span class="calc-button" onclick="appendNumber('8')">8</span>
+                <span class="calc-button" onclick="appendNumber('7')">7</span>
+                <span class="calc-button" onclick="appendSymbol('*')">&times;</span>
+            </div>
+            <div class="calc-buttons-row">
+                <span class="calc-button" onclick="appendNumber('6')">6</span>
+                <span class="calc-button" onclick="appendNumber('5')">5</span>
+                <span class="calc-button" onclick="appendNumber('4')">4</span>
+                <span class="calc-button" onclick="appendSymbol('-')">&minus;</span>
+            </div>
+            <div class="calc-buttons-row">
+                <span class="calc-button" onclick="appendNumber('3')">3</span>
+                <span class="calc-button" onclick="appendNumber('2')">2</span>
+                <span class="calc-button" onclick="appendNumber('1')">1</span>
+                <span class="calc-button" onclick="appendSymbol('+')">&plus;</span>
+            </div>
+            <div class="calc-buttons-row">
+                <span class="calc-button triple" onclick="appendNumber('0')">0</span>
+                <span class="calc-button" onclick="calculateResult()">&equals;</span>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        function clearScreen() {
+            document.calc.txt.value = '';
+        }
+    
+        function removeLastCharacter() {
+            var currentText = document.calc.txt.value;
+            if (currentText.length > 0) {
+                document.calc.txt.value = currentText.slice(0, -1);
+            }
+        }
+    
+        function appendNumber(number) {
+            document.calc.txt.value += number;
+        }
+    
+        function appendSymbol(symbol) {
+            document.calc.txt.value += symbol;
+        }
+    
+        function calculateResult() {
+            var currentText = document.calc.txt.value;
+            var result = eval(currentText);
+            document.calc.txt.value = result;
+        }
+    </script>
+    
+
+    <div class="container">
+        <a href="index.html"><h3>Back</h3></a>
+    </div>
+    <script src="./Js/calculadora.js"></script>
+</body>
+</html>
