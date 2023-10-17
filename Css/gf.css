@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    background-color: #14151a;
+    color: aliceblue;
+}
+
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.stars:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Img/ses.png');
+  animation: animateStars 100s linear infinite;
+  -webkit-animation: animateStars 100s linear infinite;
+}
+
+@keyframes animateStars {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5000px -5000px;
+  }
+}
+
+button {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid aliceblue;
+  box-shadow: 2px 2px 10px aliceblue;
+  color: aliceblue;
+  background-color: #14151a;
+}
+button:hover {
+  background-color: #000000;
+}
+
+.button {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid aliceblue;
+  box-shadow: 2px 2px 10px aliceblue;
+  color: aliceblue;
+  background-color: #14151a;
+}
+.button:hover {
+  background-color: #000000;
+}
+
+a {
+    padding: 4px 4px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: aliceblue;
+  }
+
+  a:hover {
+    color:rgb(141, 141, 141)
+  }
+
+.container{
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+  }
