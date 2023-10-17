@@ -378,7 +378,7 @@ height: 60%;
 
 
 .popup.active { opacity: 1; transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
-.popup.active h4{ animation: entradaTitulo .8s ease .5s; }
+.popup.active h2{ animation: entradaTitulo .8s ease .5s; }
 
 
 #Tecnologias .container{
@@ -387,7 +387,7 @@ height: 60%;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 100vh;
+    height: 120vh;
     padding-bottom: 5vh;
 }
 
@@ -618,6 +618,17 @@ height: 60%;
     flex-direction: column;
 }
 
+#Proyectos .projects{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  gap: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
 .neon {
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -734,6 +745,17 @@ footer .container{
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
   }
+
+  #Proyectos .projects{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    gap: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction:row;
+}
 
 
 
