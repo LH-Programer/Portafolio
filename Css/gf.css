@@ -28,7 +28,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../Img/ses.png');
+  background-image: url('../Img/corazones.png');
   animation: animateStars 100s linear infinite;
   -webkit-animation: animateStars 100s linear infinite;
 }
