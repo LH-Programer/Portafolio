@@ -54,3 +54,22 @@ btnCerrarPopup2.addEventListener('click', function(){
     popup2.classList.remove('active')
 });
 
+//animaciones
+
+ScrollReveal().reveal('h1', {
+    duration:1000,
+    origin: 'bottom',
+    distance: '-100px'
+});
+
+ScrollReveal().reveal('.choose', {
+    duration:2000,
+    origin: 'bottom',
+    distance: '-100px'
+});
+
+ScrollReveal().reveal('button', {
+    duration:3000,
+    origin: 'left',
+    distance: '-100px'
+});
