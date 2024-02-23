@@ -8,7 +8,7 @@ const cambio = document.getElementById("cambio");
 dolar.addEventListener("input", function(){
 
     const inputValue = parseFloat(dolar.value);
-    const clp = 844 * inputValue;
+    const clp = 981 * inputValue;
 
     if (!isNaN(clp)) {
         peso.value = clp.toFixed();
