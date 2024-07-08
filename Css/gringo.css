@@ -11,6 +11,15 @@
     color: aliceblue;
 }
 
+a{
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+
+a:hover{
+  color: grey;
+}
+
 .container{
     width: 80%;
     max-width: 1400px;
@@ -40,6 +49,7 @@
     font-size: 1.2em;
     font-weight: bold;
     padding: 10px;
+    margin: 10px;
     width: 80%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -51,4 +61,51 @@
     color: aliceblue;
     background-color: #14151a;
     margin-top: 10px;
+  }
+
+.box {
+    background-color: #1c1d23;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    min-width: 280px;
+    margin: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bandera {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form img {
+    margin-bottom: 10px;
+}
+
+.back{
+  padding-bottom: 10vh;
+  padding-left: 30px;
+}
+
+
+
+  @media (min-width:768px) {
+
+
   }

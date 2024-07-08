@@ -67,6 +67,7 @@ inch.addEventListener("input", function(){
 
     if (!isNaN(cm2)) {
         cm.value = cm2.toPrecision();
+        console.log("valor");
     } else {
         cm.value = "";
     }
@@ -80,6 +81,7 @@ cm.addEventListener("input", function(){
 
     if (!isNaN(inches)) {
         inch.value = inches.toPrecision();
+        console.log("valor");
     } else {
         inch.value = "";
     }

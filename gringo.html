@@ -11,53 +11,57 @@
     <script src="https://kit.fontawesome.com/0b6d2c7b29.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <div class="container">
-
-    <h1>Gringo System</h1>
-
-    <h2>Dolar to CLP</h2>
-        <div class="box">
-            <span class="borderLine"></span>
-            <form action="">
-                <br>
-                <div class="dolar">
-                    <img src="Img/estados-unidos.png" height="30px" alt="chile">
-                    <h3>Dolar</h3>
-                    <input type="number" id="dolar">
+        <h1>Gringo System</h1>
+    
+        <div class="row">
+            <div class="col">
+                <h2>Dolar to CLP</h2>
+                <div class="box">
+                    <span class="borderLine"></span>
+                    <form action="">
+                        <br>
+                        <div class="bandera">
+                            <img src="Img/estados-unidos.png" height="30px" alt="chile">
+                            <h3>Dolar</h3>
+                        </div>
+                            <input type="number" id="dolar">
+                        <br><br>
+                        <div class="bandera">
+                            <img src="Img/chile.png" height="30px" alt="chile">
+                            <h3>Pesos</h3>
+                        </div>
+                            <input type="number" id="peso">
+                    </form>
                 </div>
-                <br><br>
-                <button id="cambio"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
-                <br><br><br>
-                <div class="peso">
-                    <img src="Img/chile.png" height="30px" alt="chile">
-                    <h3>Pesos</h3>
-                    <input type="number" id="peso">
+            </div>
+    
+            <div class="col">
+                <h2>Inches to Cm</h2>
+                <div class="box">
+                    <span class="borderLine"></span>
+                    <form action="">
+                        <br>
+                        <div class="inch">
+                            <h3>Inches</h3>
+                            <input type="number" id="inch">
+                        </div>
+                        <br>
+                        <div class="cm">
+                            <h3>Centimeters</h3>
+                            <input type="number" id="cm">
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
+        </div>
+        <div class="back">
+            <a href="index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
         </div>
     </div>
-<br><br><br>
-    <div class="container">
-    <h2>Inches to Cm</h2>
-    <div class="box">
-        <span class="borderLine"></span>
-        <form action="">
-            <br>
-            <div class="dolar">
-                <h3>Inches</h3>
-                <input type="number" id="inch">
-            </div>
-            <br>
-            <div class="peso">
-                <h3>Centimeters</h3>
-                <input type="number" id="cm">
-            </div>
-        </form>
-    </div>
-</div>
-</div>
+    
 
-<br><br><br><br><br>
 
     <script src="Js/gringo.js"></script>
 </body>

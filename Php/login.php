@@ -1,23 +1,6 @@
 <?php
 
-session_start();
-
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "portafolio";
-
-$conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
-if (!$conn)
-{
-    die ("No hay conexion:".mysqli_connect_error());
-}
-
-$mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
-if($mysqli->connect_error) {
-  exit('Error connecting to database');
-}
-
+include 'conexion.php';
 
 $usuario = $mysqli->real_escape_string($_POST['usuario']);
 $contraseña = $mysqli->real_escape_string($_POST['contraseña']);

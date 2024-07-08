@@ -1,16 +1,6 @@
 <?php
-ini_set('display_errors', 'On');
 
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "portafolio";
-
-$conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
-if (!$conn)
-{
-    die ("No hay conexion:".mysqli_connect_error());
-}
+include 'conexion.php';
 
 $usuario = $_POST["usuario"];
 $mail = $_POST["mail"];
