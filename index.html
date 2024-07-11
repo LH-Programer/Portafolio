@@ -1,116 +1,219 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
+    <link rel="icon" href="Img/ojos.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable= no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Control Store</title>
+    <title>Portafolio</title>
 
-    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="Css/index.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-    
-    <script src="https://kit.fontawesome.com/0b6d2c7b29.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/0b6d2c7b29.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
+
 <body>
-    
-    <header>
+    <div class="stars"></div>
+    <header class="header">
         <div class="container">
             <nav class="nav" id="nav">
-                <img src="./Img/Logo.png" alt="Logo" id="nav__logo">
+                <h2 class="nav__logo"><i class="fa-solid fa-spider"></i> Web</h2>
                 <ul class="nav__links">
-                    <li class="nav__item"><a href="#Como">Servicio</a></li>
-                    <li class="nav__item"><a href="#Soluciones">Soluciones</a></li>
-                    <li class="nav__item"><a href="#Contacto">Contactanos</a></li>
-                    <br><br><br><br><br>
-                    <li class="nav__item"><a href="login.html">Ingresar</a></li>
+                    <li class="nav__item">
+                        <a href="#Presentacion" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#Tecnologias" class="nav__link">I use</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#Proyectos" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#Contacto" class="nav__link">Contact</a>
+                    </li>
                 </ul>
 
                 <a href="#nav" class="nav__hamburguer">
-                    <img src="./Img/iconizer-menu.svg" class="nav__icon" alt="menu">
-                </a>
-            
-                <a href="#" class="nav__close">
-                    <img src="./Img/iconizer-cerrar.svg" class="nav__icon" alt="menu">
+                    <img src="Img/menu.png" class="nav__icon" alt="menu" >
                 </a>
 
+                <a href="#" class="nav__close">
+                    <img src="Img/cruzar.png" class="nav__icon" alt="menu">
+                </a>
             </nav>
         </div>
-
-    <div class="container">
-        <div class="main">
-        <h1>Somos el mejor pais de chile</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestias tempora autem maxime ducimus labore</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, odit temporibus magnam possimus minus placeat maiores doloribus quis dolore, excepturi molestiae aspernatur officiis tempora et recusandae! Accusamus voluptatem ex exercitationem!</p>
+        <div class="span_container">
+        <span>Hello World!</span>
         </div>
-    </div>
     </header>
 
-    <section id="Como">
-        <div class="text_container">
-        <div class="animation-como">
-        <h2>¿Como Funciona?</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptate. Earum voluptatum quidem neque nulla</p>
-        <p>Tambien para mas información</p>
+    <!-- bubbles
+        <div class="container-bubbles">
+            <div class="bubbles">
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:29;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:27;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:25;"></span>
+            </div>
         </div>
+    -->
+    <section id="Presentacion">
+    
+    <div class="contenedor-principal">
+    <div class="contenedor-imagen">
+    <img src="Img/PERFIL.jpg" class="border" alt="yo">
+    </div>
+    </div>
+
+    <div class="container">
+    <h1 class="name">Luis Huber</h1>
+
+    <div class="info">
+    <h3>Programming and Systems Analysis Technician</h3>
+
+    <p>Developer and Web Designer Programer</p>
+    </div>
         <div class="overlay" id="overlay">
             <div class="popup" id="popup">
                 <a href="#Presentacion" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa-solid fa-xmark"></i></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt dolorem sequi iste ad nostrum laudantium eius odio quam quas dolor laborum, culpa repudiandae distinctio. Corporis explicabo rem expedita nobis?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perspiciatis quaerat, nulla aspernatur quas cum, dolorem, et veniam reiciendis aliquid sint corrupti voluptas sapiente dicta obcaecati tempore fugiat labore sit?</p>
+                <h2>About me</h2>
+                <p>As you've recently read, my name is Luis Huber, I'm 22 years old and I'm Chilean programmer, so english it's not
+                    my first language, but I try to practice and improve it with the time, and not only with english, with the my progamming skills and
+                    with the life in general, I try to be the best version of myself, I like to do sports too, that's weird from a programmer no? 
+                    but if you want to have a healthy mind, you need to have a healthy body.
+                </p>
+                <p>
+                    Right now i don't have too much experience, but i know with respect and time im going to be capable to do big things and if you
+                    wanna help me with that, you are free to contact me. Thanks for reading this ^^
+                </p>
             </div>
         </div>
-        <button id="btn-abrir-popup" class="btn-abrir-popup">presiona aqui</button>
-        </div>
+        <br>
+        <button id="btn-abrir-popup" class="btn-abrir-popup">More</button>
+    </div>
+
     </section>
 
-    <section id="Soluciones">
-        <div class="text_container">
-        <div class="animation-soluciones">
-        <h2>¿Porque contrarnos?</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur illo nemo dicta, omnis iusto ea dolor inventore</p>
-            <div class="imagenes">
-                <div class="img"></div>
-                <div class="img"></div>
-                <div class="img"></div>
-                <div class="img"></div>
-                <div class="img"></div>
-                <div class="img"></div>
-            </div>
-        </div>
-        </div>
-    </section>
+    <section id="Tecnologias">
 
-    <section id="Contacto">
-        <div class="text_container">
-        <div class="animation-contacto">
-        <h2>Contactanos acá</h2>
-        <img src="./Img/Icono_Logo_ControlStore-removebg-preview.png" alt="logo" height="300">
-        </div>
-        </div>
-        <br><br><br>
         <div class="container">
-            <a href="https://api.whatsapp.com/send?phone=+569 4250 5782&text=Hola, Me gustaria saber más acerca de Control Store." target="_blank"><i class="fa-brands fa-whatsapp fa-beat" style="color: #ffffff;"></i> Whatsapp</a>
-            <a href="mailto:soporte@controlstore.cl"><i class="fa-regular fa-envelope fa-beat" style="color: #ffffff;"></i> E-Mail </a>
-            </div>
+            <h3 class="title">Languages I use</h3>
+           <section id="programming">
+                <div class="flex-item flex1"></div>
+                <div class="flex-item flex2"></div>
+                <div class="flex-item flex3"></div>
+                <div class="flex-item flex4"></div>
+                <div class="flex-item flex5"></div>
+                <div class="flex-item flex6"></div>
+                <div class="flex-item flex7"></div>
+                <div class="flex-item flex8"></div>
+           </section>
+
+            <h3 class="title">Frameworks</h3>
+           <section id="framework">
+            <div class="flex-item2 flex10"></div>
+            <div class="flex-item2 flex20"></div>
+           </section>
+
+            <h3 class="title">Databases</h3>
+           <section id="database">
+            <div class="flex-item3 flex11"></div>
+            <div class="flex-item3 flex33"></div>
+           </section>
+
+            <h3 class="title">I usually use</h3>
+           <section id="use">
+            <div class="flex-item4 flex100"></div>
+            <div class="flex-item4 flex200"></div>
+            <div class="flex-item4 flex300"></div>
+            <div class="flex-item4 flex400"></div>
+           </section>
+
+        </div>
+ 
+    </section>
+
+    <section id="Proyectos">
+        <div class="container">
+            <div class="neon">Projects</div>
+                <div class="imagenes">
+                    <div class="img">
+                        <h3>SantaMesa LandingPage</h3>
+                        <p>(hosting down for the moment)</p>
+                        <a href="https://santamesa.cl/" class="button">View</a>
+                    </div>
+                    <div class="img">
+                        <h3>Basic System CRUD</h3>
+                        <p>With login and register</p>
+                        <p>link of Github (php)</p>
+                        <a href="Php/crud.php" class="button">View</a>
+                    </div>
+                    <div class="img">
+                        <h3>Calculator</h3>
+                        <a href="calculadora.html" class="button">View</a>
+                    </div>
+                    <div class="img">
+                        <h3>Gringo System</h3>
+                        <p>Under construction</p>
+                        <a href="gringo.html" class="button">View</a>
+                    </div>
+                </div>
+
+            <h2>More, Coming soon..</h2> 
+        </div>
+    </section>
+    <br>
+    <br>
+    <section id="Contacto">
+        <div class="container">
+        <a href="mailto:ls.huber11@gmail.com"><i class="fa-regular fa-envelope fa-beat" style="color: #ffffff;"></i> E-Mail </a>
+        <a href="https://github.com/LH-Programer" target="_blank"><i class="fa-brands fa-github fa-bounce" style="color: #ffffff;"></i> Github</a>
+        <a href="https://www.linkedin.com/in/luis-huber-6a9a87257/" target="_blank"> <i class="fa-brands fa-linkedin fa-shake" style="color: #ffffff;"></i> Linkedin</a>
+        </div>
     </section>
 
     <footer>
-
+        <div class="container">
+        <a href="#">Up <i class="fa-solid fa-house"></i></a>
+        </div>
     </footer>
 
-    <footer>
-        <div class="text_container">
-        <hr>
-        <p>© Control Store 2024</p>
-        </div>
-    </footer>    
-
-    <script src="./JavaScript/index.js"></script>
-
+    <script src="./Js/index.js"></script>
+    
 </body>
-
 </html>
