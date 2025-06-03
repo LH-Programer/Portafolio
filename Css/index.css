@@ -55,6 +55,7 @@ button {
   box-shadow: 2px 2px 10px aliceblue;
   color: aliceblue;
   background-color: #14151a;
+  cursor: pointer;
 }
 button:hover {
   background-color: #000000;
@@ -359,7 +360,7 @@ height: 60%;
 .flex-item {
   flex-basis: 100px;
   flex-grow: 1;
-  height: 15vh;
+  height: 12vh;
 }
 
 .flex1 {
@@ -809,23 +810,32 @@ footer .container{
   }
 
   #programming{
-    height: 100px;
+    height: 200px;
+    align-items: center;
     justify-content: center;
+    padding-top: 50px;
   }
 
+
   #framework{
-    height: 100px;
+    height: 200px;
+    align-items: center;
     justify-content: center;
+    padding-top: 40px;
   }
 
   #database{
-    height: 100px;
+    height: 200px;
+    align-items: center;
     justify-content: center;
+    padding-top: 40px;
   }
 
   #use{
-    height: 100px;
+    height: 200px;
+    align-items: center;
     justify-content: center;
+    padding-top: 40px;
   }
 
 
