@@ -203,60 +203,6 @@ button:hover {
 @keyframes blink {
   50% { border-color: transparent;}
 }
-/* bubbles
-.container-bubbles{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.bubbles {
-  position: relative;
-  display: flex;
-}
-
-.bubbles span{
-  position:relative;
-  width: 30vh;
-  height: 10px;
-  background: #e1e3e3;
-  margin: 0 4px;
-  border-radius: 10%;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  -o-border-radius: 10%;
-  box-shadow: 0 0 0 10px #e1e3e344,  0 0 10px #e1e3e3,  0 0 30px #e1e3e3;
-  animation: animate 15s linear infinite;
-  animation-duration: calc(125s / var(--i));
-}
-
-.bubbles span:nth-child(even) {
-  background: #424242;
-  box-shadow: 0 0 0 10px #42424244,
-  0 0 10px #424242,
-  0 0 30px #424242;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateY(100vh) scale(0);
-    -webkit-transform: translateY(100vh) scale(0);
-    -moz-transform: translateY(100vh) scale(0);
-    -ms-transform: translateY(100vh) scale(0);
-    -o-transform: translateY(100vh) scale(0);
-}
-  100%{
-    transform:translateY(-10vh) scale(1);
-    -webkit-transform:translateY(-10vh) scale(1);
-    -moz-transform:translateY(-10vh) scale(1);
-    -ms-transform:translateY(-10vh) scale(1);
-    -o-transform:translateY(-10vh) scale(1);
-}
-}
-*/
 
   #Presentacion .container{
     height: 80vh;
@@ -509,6 +455,20 @@ height: 60%;
   background-position: center;
 }
 
+.flex40 {
+  background-image: url(../Img/React-icon.png);
+  background-size: 10vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flex50 {
+  background-image: url(../Img/tailwind-css-icon.png);
+  background-size: 10vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #database {
   margin: 40px 1;
   width: 90%;
@@ -728,6 +688,30 @@ height: 60%;
     rgba(0,0,0,0.5)
   )
   ,url("../Img/gringosystem.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.img:nth-child(5){
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url("../Img/Gato.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.img:nth-child(6){
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url("../Img/JBO.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
